@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Arial MT";
+    font-family: "Arial";
   }
   
   .container {
@@ -28,8 +28,7 @@ body {
   .main-header-wrp {
     width: 458px;
     float: left;
-  /*   border: 1px solid white;
-     */}
+  }
   
   .main-header-title {
     margin: 0 0 10px 0;
@@ -60,8 +59,7 @@ body {
     background-image: url('https://cdn.icon-icons.com/icons2/510/PNG/512/checkmark_icon-icons.com_50429.png');
     -webkit-background-size: cover;
     background-size: cover;
-  /*   border: 1px solid #fff;
-     */  position: absolute;
+    position: absolute;
     top: 10px;
     left: -18px;
   }
@@ -81,7 +79,6 @@ body {
   .main-video{
     display: block;
     background-color: #445161;
-    /* float: right; */
     margin: 0;
     width: 400px;
     object-fit: cover;
@@ -114,7 +111,7 @@ body {
     
   .about-product{
       display: flex;
-      padding: 25px;
+      padding: 50px;
       box-sizing: border-box;
       justify-content: space-between;
   }
@@ -127,7 +124,11 @@ body {
     .about-product div {
     width: 600px;
     }
+    .about-product h2{
+    margin: 0 0 30px 0;  
+    }
   .header-mini{
+      width: 100%;
       text-align:center ;
       margin: 0 0 20px 0;
   }
@@ -139,6 +140,11 @@ body {
   .screenshots {
     padding: 50px;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     }
     .screenshots figure h3 {
       margin: 0 0 10px 0;
@@ -148,14 +154,12 @@ body {
       }
       .screenshots figure {
       margin: 0 0 20px 0;
+      width: 48%;
       }
       .screenshots figure:nth-child(2),
       .screenshots figure:nth-child(4) {
       margin: 0;
       }
-  .screenshots-content{
-    display: flex;
-  }
   .screenshots-img{
     display: block;
     width: 150px;
@@ -236,7 +240,7 @@ body {
   .price {
     width: 200px;
     padding: 0 0 10px 0;
-    margin: 0 10px 20px;
+    margin: 0 10px 0 0;
     border: 2px  solid #445161;
     border-radius: 10px;
     background-color: #445161;
@@ -244,6 +248,9 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+  .price:nth-child(3) {
+    margin: 0;
+    }
   
   .price-title {
     display: block;
@@ -298,6 +305,10 @@ body {
     background-color: #fff;
     color: #445161;
   }
+  .buy-it-now {
+    padding: 50px;
+    box-sizing: border-box;
+    }
   .buy-it-now-content{
     display: flex;
     justify-content: center;
@@ -339,7 +350,7 @@ body {
     margin: 0 0 20px 0;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid gray;
+    border: 1px solid #445161;
     border-radius: 5px;
     background-color:  #ffffff;
     outline: none;
@@ -349,7 +360,7 @@ body {
   .main-footer_form input[type="text"]:hover,
   .main-footer_form input[type="email"]:hover,
   .main-footer_form textarea:hover {
-    background-color: gray;
+    background-color: #445161;
     color: white;
     border-color: white;
   }
@@ -363,7 +374,7 @@ body {
   .main-footer_form textarea {
     width: 500px;
     height: 170px;
-    border: 1px solid gray;
+    border: 1px solid #445161;
     border-radius: 5px;
     background-color:  #ffffff;
     outline: none;
@@ -373,7 +384,7 @@ body {
   textarea[placeholder] {
     text-overflow:ellipsis;
     font-family: Arial;
-    color:  #445162;
+    color:  #445161;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -391,7 +402,17 @@ body {
   outline: none;
   color: #445161;
   font-weight: bold;
- } 
+ }
+ .form-btn:hover {
+  background-color: #445161;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.form-btn:active {
+  background-color: #fff;
+  color: #445161;
+}
  .main-footer-contacts {
   width: 241px;
   margin: 0;
@@ -429,20 +450,19 @@ body {
 }
 
 .main-footer-contacts-link:nth-of-type(1):before {
-  /* border: 1px solid #fff; */
-  background-image: url('https://s1.iconbird.com/ico/2014/1/622/w512h5121390854473skype512.png');
+  background-image: url(../img/skype26.png)
 }
 
 .main-footer-contacts-link:nth-of-type(2):before {
-  background-image: url('http://s1.iconbird.com/ico/2014/1/622/w128h1281390854468icq128.png');
+  background-image: url(../img/icq48.png) ;
 }
 
 .main-footer-contacts-link:nth-of-type(3):before {
-  background-image: url('http://s1.iconbird.com/ico/2013/11/504/w128h1281385326478email.png');
+  background-image: url(../img/email.png) ;
 }
   
 .main-footer-contacts-link:nth-of-type(4):before {
-  background-image: url('http://s1.iconbird.com/ico/2014/1/622/w128h1281390854463phone128.png');
+  background-image: url(../img/phone26.png) ;
 }
 
 
@@ -450,5 +470,35 @@ body {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box; 
+}
+ .icon1{
+  background-image: url(../img/twitter.png) ;
+  height: 50px;
+  width: 50px;
+ }
+ .icon2{
+  background-image: url(../img/facebook.png) ;
+  height: 50px;
+  width: 50px;
+}
+ .icon3{
+  background-image: url(../img/intsagram.png) ;
+  height: 50px;
+  width: 50px;
+}
+ .icon4{
+  background-image: url(../img/google.png) ;
+  height: 50px;
+  width: 50px;
+}
+ .icon5{
+  background-image: url(../img/youtube.png);
+  height: 50px;
+  width: 50px;
+}
+.copy{
+  text-align: center;
+  margin: 10px 0 0 0;
+  color: #445161;
 }
   
