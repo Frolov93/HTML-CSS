@@ -4,216 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="main-header">
-            <div class="main-header-wrp">
-                <h1 class="main-header-title">Product name</h1>
-                <ul class="main-header-list">
-                    <li class="main-header-list-item">Put in this page information about your product</li>
-                    <li class="main-header-list-item">A detailed description of your product</li>
-                    <li class="main-header-list-item">Tell us about your advantages and merits</li>
-                    <li class="main-header-list-item">Associate the page with the payment system</li>
+    <header id="header" class="header">
+        <div class="navigation">
+            <a class="logo" href="#">
+                <svg class="logo-cvg" width="64px" height="64px">
+                    <path
+                        d="M 52.87 55.13C 52.87 55.13 58.13 45.94 58.13 45.94 58.13 45.94 63.38 55.13 63.38 55.13 63.38 55.13 52.87 55.13 52.87 55.13ZM 46.3 45.17C 46.3 45.17 56.81 45.17 56.81 45.17 56.81 45.17 51.56 54.36 51.56 54.36 51.56 54.36 46.3 45.17 46.3 45.17ZM 51.56 34.45C 51.56 34.45 56.81 43.64 56.81 43.64 56.81 43.64 46.3 43.64 46.3 43.64 46.3 43.64 51.56 34.45 51.56 34.45ZM 39.74 33.69C 39.74 33.69 50.24 33.69 50.24 33.69 50.24 33.69 44.99 42.87 44.99 42.87 44.99 42.87 39.74 33.69 39.74 33.69ZM 44.99 22.97C 44.99 22.97 50.24 32.15 50.24 32.15 50.24 32.15 39.74 32.15 39.74 32.15 39.74 32.15 44.99 22.97 44.99 22.97ZM 33.17 22.2C 33.17 22.2 43.68 22.2 43.68 22.2 43.68 22.2 38.42 31.39 38.42 31.39 38.42 31.39 33.17 22.2 33.17 22.2ZM 38.42 11.48C 38.42 11.48 43.68 20.67 43.68 20.67 43.68 20.67 33.17 20.67 33.17 20.67 33.17 20.67 38.42 11.48 38.42 11.48ZM 26.6 10.71C 26.6 10.71 37.11 10.71 37.11 10.71 37.11 10.71 31.85 19.91 31.85 19.91 31.85 19.91 26.6 10.71 26.6 10.71ZM 31.85-0.01C 31.85-0.01 37.11 9.18 37.11 9.18 37.11 9.18 26.6 9.18 26.6 9.18 26.6 9.18 31.85-0.01 31.85-0.01ZM 20.03 20.67C 20.03 20.67 25.29 11.48 25.29 11.48 25.29 11.48 30.54 20.67 30.54 20.67 30.54 20.67 20.03 20.67 20.03 20.67ZM 13.46 32.15C 13.46 32.15 18.72 22.97 18.72 22.97 18.72 22.97 23.97 32.15 23.97 32.15 23.97 32.15 13.46 32.15 13.46 32.15ZM 6.9 43.64C 6.9 43.64 12.15 34.45 12.15 34.45 12.15 34.45 17.4 43.64 17.4 43.64 17.4 43.64 6.9 43.64 6.9 43.64ZM 0.33 55.13C 0.33 55.13 5.58 45.94 5.58 45.94 5.58 45.94 10.84 55.13 10.84 55.13 10.84 55.13 0.33 55.13 0.33 55.13ZM 17.4 45.17C 17.4 45.17 12.15 54.36 12.15 54.36 12.15 54.36 6.9 45.17 6.9 45.17 6.9 45.17 17.4 45.17 17.4 45.17ZM 23.97 33.69C 23.97 33.69 18.72 42.87 18.72 42.87 18.72 42.87 13.46 33.69 13.46 33.69 13.46 33.69 23.97 33.69 23.97 33.69ZM 30.54 22.2C 30.54 22.2 25.29 31.39 25.29 31.39 25.29 31.39 20.03 22.2 20.03 22.2 20.03 22.2 30.54 22.2 30.54 22.2ZM 37.11 55.13C 37.11 55.13 26.6 55.13 26.6 55.13 26.6 55.13 31.85 45.94 31.85 45.94 31.85 45.94 37.11 55.13 37.11 55.13ZM 43.68 45.17C 43.68 45.17 38.42 54.36 38.42 54.36 38.42 54.36 33.17 45.17 33.17 45.17 33.17 45.17 43.68 45.17 43.68 45.17ZM 50.24 55.13C 50.24 55.13 39.74 55.13 39.74 55.13 39.74 55.13 44.99 45.94 44.99 45.94 44.99 45.94 50.24 55.13 50.24 55.13Z" />
+                </svg>
+                <h1 class="logo-txt">Waxom
+                </h1>
+            </a>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">home</li>
+                    <li class="menu-item">about us</li>
+                    <li class="menu-item">portfolio</li>
+                    <li class="menu-item">features</li>
+                    <li class="menu-item">blog</li>
+                    <li class="menu-item">prising</li>
+                    <li class="menu-item">shortcodes</li>
+                    <li class="menu-item">contacts</li>
                 </ul>
-            </div>
-            <img class="main-header-img" src="#" alt="фото товара" width="469" height="214">
-        </header>
-        <main class="content">
-            <section class="about-product">
-                <div>
-                    <h2>About Your Product</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, eveniet et totam ipsam
-                        assumenda itaque sequi laborum cum ullam obcaecati! Assumenda sed dolorem labore accusamus
-                        deserunt delectus velit exercitationem in!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sit, iure. Maxime dolor rerum,
-                        sapiente quisquam, quo eveniet officia placeat, in obcaecati repudiandae tempore enim aut veniam
-                        tenetur beatae harum!</p>
+                <div class="header-icon">
+                    <a class="icon-card" href="#"></a>
+                    <a class="icon-search" href="#"></a>
                 </div>
-                <video class="main-video" width="400" height="200" autoplay muted loop controls
-                    src="img/coverr-paris_eiffeltower_birhakeim-4117.mp4"></video>
-            </section>
-            <section class="dignity">
-                <h2 class="header-mini">Dignity and pluses product</h2>
-                <ul class="dignity-list">
-                    <li class="dignity-list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
-                        magni?</li>
-                    <li class="dignity-list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
-                        magni?</li>
-                    <li class="dignity-list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
-                        magni?</li>
-                    <li class="dignity-list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
-                        magni?</li>
-                    <li class="dignity-list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
-                        magni?</li>
-                    <li class="dignity-list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
-                        magni?</li>
-                </ul>
-            </section>
-            <section class="screenshots">
-                <h2 class="header-mini">Screenshots </h2>
-                <figure>
-                    <img class="screenshots-img" src="#" alt="screenshot">
-                    <figcaption>
-                        <h3>The Description for the image</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quas maiores
-                            velit,
-                            recusandae minima a consequatur, eligendi harum ipsam expedita doloribus, doloremque
-                            cum
-                            aut blanditiis ullam perspiciatis maxime earum assumenda!</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="screenshots-img" src="#" alt="screenshot">
-                    <figcaption>
-                        <h3>The Description for the image</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quas maiores
-                            velit,
-                            recusandae minima a consequatur, eligendi harum ipsam expedita doloribus, doloremque
-                            cum
-                            aut blanditiis ullam perspiciatis maxime earum assumenda!</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="screenshots-img" src="#" alt="screenshot">
-                    <figcaption>
-                        <h3>The Description for the image</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quas maiores
-                            velit,
-                            recusandae minima a consequatur, eligendi harum ipsam expedita doloribus, doloremque
-                            cum
-                            aut blanditiis ullam perspiciatis maxime earum assumenda!</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="screenshots-img" src="#" alt="screenshot">
-                    <figcaption>
-                        <h3>The Description for the image</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quas maiores
-                            velit,
-                            recusandae minima a consequatur, eligendi harum ipsam expedita doloribus, doloremque
-                            cum
-                            aut blanditiis ullam perspiciatis maxime earum assumenda!</p>
-                    </figcaption>
-                </figure>
+            </nav>
+        </div>
+        <div class="header-txt">
+            <h2>Unique and Modern Design</h2>
+            <h1>Portfolio PSD Template</h1>
+            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id&nbsp;quod mazim
+                placerat facer possim assum.</p>
+            <a class="button" href="#"><span>Get started</span></a>
+        </div>
+        <div class="slider-icon">
+            <a class="slider-item" href="#"></a>
+            <a class="slider-item" href="#"></a>
+            <a class="slider-item" href="#"></a>
+            <a class="slider-item" href="#"></a>
+            <a class="slider-item" href="#"></a>
+        </div>
+    </header>
+    <section id="about" class="services">
+        <div class="services-wrap">
+            <a class="services-txt" href="#">
+                <svg class="services-icon" width="49" height="49">
+                    <path
+                        d="M47.67 19.72L33.4 33.99.53 48.46l14.48-32.87L29.28 1.33c.62-.62 1.62-.62 2.25 0 .62.62.62 1.62 0 2.25L17.68 17.42 9.11 36.89l3 3 19.46-8.58 13.85-13.84c.62-.62 1.62-.62 2.25 0 .62.62.62 1.63 0 2.25zm-17.92 8.75c-.32.3-.72.46-1.13.46-.41 0-.81-.16-1.12-.46-.62-.63-.62-1.63 0-2.25l13.33-13.34c.62-.62 1.62-.62 2.25 0 .62.63.62 1.63 0 2.25L29.75 28.47zm-3.49-3.48c-.31.3-.71.46-1.12.46-.41 0-.81-.16-1.12-.46-.63-.63-.63-1.64 0-2.26L37.35 9.4c.62-.62 1.62-.62 2.25 0 .62.62.62 1.63 0 2.25L26.26 24.99zm-3.48-3.49c-.31.31-.71.47-1.12.47a1.593 1.593 0 0 1-1.13-2.72L33.87 5.92c.62-.62 1.63-.62 2.25 0 .62.62.62 1.63 0 2.25L22.78 21.5z" />
+                </svg>
+                <h3 class="
+                header-mini">web & app design</h3>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+            </a>
+            <a class="services-txt" href="#">
+                <svg class="services-icon" width="44" height="40">
+                    <path
+                        d="M.41 19.7l3.99-2.15 17.45 9.41 17.45-9.41 3.99 2.15-21.44 11.55L.41 19.7zm0-8.03L21.85.11l21.44 11.56-21.44 11.56L.41 11.67zm21.44 23.31l17.45-9.41 3.99 2.15-21.44 11.56L.41 27.72l3.99-2.15 17.45 9.41z" />
+                </svg>
+                <h3 class="
+                header-mini">development</h3>
+                <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoree.</p>
+            </a>
+            <a class="services-txt" href="#">
+                <svg class="services-icon" width="44" height="44">
+                    <path
+                        d="M43.93 21.85c0-1.62-1.17-3.35-2.61-3.86-1.44-.51-2.83-1.75-3.24-2.74-.4-.98-.3-2.85.36-4.23.65-1.38.25-3.43-.89-4.58-1.15-1.14-3.19-1.54-4.57-.88-1.38.65-3.25.76-4.23.35-.99-.4-2.23-1.8-2.74-3.24-.52-1.44-2.25-2.6-3.87-2.6s-3.35 1.16-3.86 2.6c-.51 1.44-1.76 2.84-2.74 3.24-.98.41-2.85.3-4.23-.35-1.38-.66-3.43-.26-4.57.88-1.15 1.15-1.55 3.2-.89 4.58s.76 3.25.35 4.23c-.4.98-1.79 2.23-3.23 2.74-1.44.51-2.61 2.24-2.61 3.86 0 1.62 1.17 3.35 2.61 3.86 1.44.51 2.83 1.76 3.24 2.74.4.98.3 2.85-.36 4.23-.66 1.38-.26 3.43.89 4.58 1.14 1.14 3.19 1.54 4.57.88 1.38-.65 3.25-.76 4.23-.35.98.41 2.23 1.8 2.74 3.24.51 1.44 2.24 2.6 3.86 2.6 1.62 0 3.35-1.16 3.87-2.6.51-1.44 1.75-2.83 2.73-3.24.99-.41 2.86-.3 4.24.35 1.38.66 3.42.26 4.57-.88 1.14-1.15 1.54-3.2.89-4.58-.66-1.38-.77-3.25-.36-4.23.4-.98 1.8-2.23 3.24-2.74 1.44-.51 2.61-2.24 2.61-3.86zm-21.79 7.99c-4.42 0-7.99-3.57-7.99-7.98a7.98 7.98 0 0 1 7.99-7.99c4.41 0 7.99 3.57 7.99 7.99 0 4.41-3.58 7.98-7.99 7.98z" />
+                </svg>
+                <h3 class="header-mini">customization</h3>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+            </a>
+            <a class="services-txt" href="#">
+                <svg class="services-icon" width="52" height="36">
+                    <path
+                        d="M51.41 14.34l-9.49 19.42c-.59 1.22-2.19 2.22-3.54 2.22H3.08c-1.35 0-1.97-1-1.37-2.22l9.49-19.42c.6-1.22 2.19-2.22 3.54-2.22h35.3c1.35 0 1.97 1 1.37 2.22zM9 13.25L.74 30.15V7.98c0-1.36 1.1-2.48 2.46-2.48h10.81V4.06c0-1 .38-1.93 1.08-2.63.7-.71 1.63-1.1 2.61-1.1h6.29c2.03 0 3.68 1.67 3.68 3.73V5.5h10.82c1.35 0 2.46 1.12 2.46 2.48v1.66H14.74c-2.27 0-4.74 1.55-5.74 3.61zm7.47-7.75h8.75V4.06c0-.69-.55-1.24-1.23-1.24H17.7c-.33 0-.64.12-.87.36-.23.24-.36.55-.36.88V5.5z" />
+                </svg>
+                <h3 class="
+                header-mini">marketing</h3>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+            </a>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-txt">
+            <h3 class="
+                 header-mini">Waxom is Realization of your Ideas.</h3>
+            <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
+                processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        </div>
+        <div class="portfolio-img">
+            <img class="img-left" src="img/browser-left.png" alt="left" width="100%">
+            <img class="img-right" src="img/browser-right.png" alt="right" width="100%">
+            <img class="img-center" src="img/browser-center.png" alt="center" width="100%">
 
-            </section>
-            <section class="reviews">
-                <span class="reviews-title">Reviews</span>
-                <div class="reviews-item">
-                    <div class="reviews-item-photo"></div>
-                    <p class="reviews-item-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-                        delectus veritatis est expedita commodi provident natus voluptatum nulla beatae ea consequatur
-                        repellendus at, quod omnis mollitia nam id iste ducimus?
-                        <span class="reviews-item-txt-author">Lourens S.</span>
-                    </p>
-                </div>
-                <div class="reviews-item">
-                    <div class="reviews-item-photo"></div>
-                    <p class="reviews-item-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-                        delectus veritatis est expedita commodi provident natus voluptatum nulla beatae ea consequatur
-                        repellendus at, quod omnis mollitia nam id iste ducimus?
-                        <span class="reviews-item-txt-author">Lourens S.</span>
-                    </p>
-                </div>
-                <div class="reviews-item">
-                    <div class="reviews-item-photo"></div>
-                    <p class="reviews-item-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-                        delectus veritatis est expedita commodi provident natus voluptatum nulla beatae ea consequatur
-                        repellendus at, quod omnis mollitia nam id iste ducimus?
-                        <span class="reviews-item-txt-author">Lourens S.</span>
-                    </p>
-                </div>
-                <div class="reviews-item">
-                    <div class="reviews-item-photo"></div>
-                    <p class="reviews-item-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-                        delectus veritatis est expedita commodi provident natus voluptatum nulla beatae ea consequatur
-                        repellendus at, quod omnis mollitia nam id iste ducimus?
-                        <span class="reviews-item-txt-author">Lourens S.</span>
-                    </p>
-                </div>
-            </section>
-            <section class="buy-it-now">
-                <h2 class="header-mini">Buy it Now </h2>
-                <div class="buy-it-now-content">
-                    <div class="price">
-                        <span class="price-title">Standart</span>
-                        <span class="price-txt">100$</span>
-                        <ol class="price-list">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ol>
-                        <button class="price-btn">buy</button>
-                    </div>
-                    <div class="price">
-                        <span class="price-title">Premium</span>
-                        <span class="price-txt">150$</span>
-                        <ol class="price-list">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ol>
-                        <button class="price-btn">buy</button>
-                    </div>
-                    <div class="price">
-                        <span class="price-title">Lux</span>
-                        <span class="price-txt">200$</span>
-                        <ol class="price-list">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ol>
-                        <button class="price-btn">buy</button>
-                    </div>
-                </div>
-
-
-            </section>
-
-        </main>
-        <footer class="main-footer">
-            <span class="main-footer-title">Contacts</span>
-            <form class="main-footer_form" action="#" method="post">
-                <input type="text" placeholder="Your name:">
-                <input type="email" placeholder="Your email:">
-                <textarea placeholder="Your message:"></textarea>
-                <input class="form-btn" type="submit" value="send">
-            </form>
-            <div class="main-footer-contacts">
-                <span class="main-footer-contacts-link link1">here_your_login_skype</span>
-                <span class="main-footer-contacts-link link2">279679659</span>
-                <span class="main-footer-contacts-link link3">psdhtmlcss@mail.ru</span>
-                <span class="main-footer-contacts-link link4">80 00 4568 55 55</span>
-                <div class="main-footer-contacts-icons">
-                    <a href="#" class="main-footer-contacts-net icon1"></a>
-                    <a href="#" class="main-footer-contacts-net icon2"></a>
-                    <a href="#" class="main-footer-contacts-net icon3"></a>
-                    <a href="#" class="main-footer-contacts-net icon4"></a>
-                    <a href="#" class="main-footer-contacts-net icon5"></a>
-                </div>
-            </div>
-        </footer>
-        <p class="copy">Copyright &copy; 2014 Product name - PSD HTML CSS</p>
-    </div>
+        </div>
+    </section>
 </body>
 
 </html>
