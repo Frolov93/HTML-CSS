@@ -1,0 +1,329 @@
+@font-face {
+    font-family: "montserrat-light";
+    src: url(../fonts/montserrat-light.woff2) format('woff2'), url(../fonts/montserrat-light.woff) format("woff"), url(../fonts/montserrat-light.ttf) format("ttf"), url(../fonts/montserrat-light-webfont.eot) format('eot');
+}
+.body{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+.header {
+    max-width: 1920px;
+    background: url(../img/photo.png) no-repeat;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.navigation {
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 40px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-txt {
+    font-family: "monserrat", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 11px;
+}
+
+.logo svg {
+    fill: #ffffff;
+}
+
+.logo:hover .logo-cvg {
+    fill: #c7b299;
+}
+
+.logo:hover .logo-txt {
+    color: #c7b299;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    font-family: "monserrat", "Arial", sans-serif;
+    list-style-type: none;
+    padding: 0;
+    color: #ffffff;
+}
+
+.menu-item {
+    margin-right: 20px;
+    display: inline;
+}
+.menu-item a {
+    text-transform: capitalize;
+    font-family: "montserrat-light", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.menu-item a:hover {
+    color: #c7b29a;
+}
+.header-icon {
+    display: flex;
+}
+
+.icon-card {
+    background-image: url(../img/icon-card.png);
+    display: block;
+    width: 18px;
+    height: 24px;
+    margin-right: 28px;
+    opacity: 0.5;
+}
+.icon-search {
+    background-image: url(../img/icon-search.png);
+    display: block;
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+}
+.header-txt {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+    text-align: center;
+    width: 45%;
+    position: relative;
+}
+
+.header-txt h2 {
+    font-family: "monserrat", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.header-txt h1 {
+    font-family: "monserrat", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 19px;
+}
+.header-txt h1::before {
+    content: "";
+    position: absolute;
+    left: -45%;
+    bottom: 100px;
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-top: 2px solid #d3c1ad;
+    border-right: 2px solid #d3c1ad;
+    transform: rotate(225deg); 
+}
+
+.header-txt h1::after {
+    content: "";
+    position: absolute;
+    right: -45%;
+    bottom: 100px;
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-top: 2px solid #d3c1ad;
+    border-right: 2px solid #d3c1ad;
+    transform: rotate(45deg);   
+}
+
+.header-txt p {
+    font-family: "montserrat-light", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.header-txt p {
+    font-family: "montserrat-light", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.button {
+    width: 170px;
+    height: 53px;
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #998675;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button span {
+    text-transform: uppercase;
+    font-family: "monserrat", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23px;
+    margin: auto;
+}
+.button:hover {
+    color: #998675;
+    background-color: white;
+    border: 1px solid #c7b29a;
+    transition: 450ms;
+}
+.slider-icon {
+    margin: 0 auto;
+    margin-top: 290px;
+    text-align: center;
+}
+
+.slider-item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    margin-right: 10px;
+}
+
+.slider-item:hover {
+    border: 2px solid black;
+    background-color: transparent;
+    transform: scale(1,2);
+}
+.services {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.services-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.services-txt {
+    width: 270px;
+    text-align: center;
+    padding: 0 16px 0 16px;
+    position: relative;
+    text-decoration: none;
+}
+.services-icon {
+    margin-bottom: 30px;
+    fill: #555555;
+}
+
+.services-txt h3 {
+    font-size: 22px;
+}
+
+.header-mini {
+    font-family: "monserrat", "Arial", sans-serif;
+    color: #555555;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.services-txt p {
+    font-family: "montserrat-light", "Arial", sans-serif;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.services-txt::after {
+    content: "";
+    position: absolute;
+    background-color: #f1eee9;
+    width: 70px;
+    height: 3px;
+    top: 230px;
+    left: 115px;
+}
+.services-txt:hover h3,
+.services-txt:hover svg {
+    color: #c7b299;
+    fill: #c7b299;
+}
+
+.services-txt:hover::after {
+    content: "";
+    position: absolute;
+    background-color: #c7b299;
+}
+.portfolio {
+    background-color: #fbfaf8;
+    padding: 83px 0 0 0;
+}
+
+.portfolio-txt {
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-txt p {
+    font-family: "montserrat-light", "Arial", sans-serif;
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+.portfolio-img {
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.img-center {
+    position: relative;
+    z-index: 3;
+    margin-left: -100%;
+    cursor: pointer;
+}
+
+.img-left {
+    position: relative;
+    z-index: 1;
+    margin-left: -25%;
+    cursor: pointer;
+}
+
+.img-right {
+    position: relative;
+    z-index: 2;
+    margin-right: -25%;
+    margin-left: -50%;
+    cursor: pointer;
+}
+
+.img-left:hover {
+    z-index: 4;
+}
+
+.img-right:hover {
+    z-index: 4;
+}
